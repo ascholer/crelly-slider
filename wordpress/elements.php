@@ -251,7 +251,7 @@ function crellyslider_printTextElement($element) {
 				<td class="cs-name"><?php _e('Text', 'crelly-slider'); ?></td>
 				<td class="cs-content">
 					<?php
-					if($void) echo '<textarea class="cs-element-inner_html">' . __('Text element', 'crelly-slider') . '</textarea>';
+					if($void) echo '<textarea class="cs-element-inner_html">' . '<span style="font-family: Montserrat; font-size: 60px; font-weight: 900;">Text element</span>' . '</textarea>';
 					else echo '<textarea class="cs-element-inner_html">' . esc_textarea(stripslashes($element->inner_html)) . '</textarea>';
 					?>
 				</td>

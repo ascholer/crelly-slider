@@ -962,8 +962,9 @@
 
 			editor.on("init", function() {
 				// Set default CSS
-				this.getDoc().body.style.fontSize = "14px";
-				this.getDoc().body.style.fontFamily = "Verdana";
+				this.getDoc().body.style.fontSize = "60px";
+				this.getDoc().body.style.fontFamily = "Montserrat";
+				this.getDoc().body.style.fontWeight = "900";
 
 				// Insert switch button
 				textarea.parent().prepend('<div class="cs-switch-editor"><div onclick="tinyMCE.execCommand(\'mceToggleEditor\', false, \'' + editor.id + '\')" class="cs-button cs-is-default cs-tinymce">' + crellyslider_translations.switch_editor + '</div></div>');
