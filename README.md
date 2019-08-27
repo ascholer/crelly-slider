@@ -1,3 +1,7 @@
+# Crelly Slider Fork
+
+Customized version of Crelly Slider for OregonCSTA website: https://oregoncsta.org
+
 # Crelly Slider
 __Crelly Slider has Layers Animations, is Free, Responsive and Easy to Use__
 
