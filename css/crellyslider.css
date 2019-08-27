@@ -162,6 +162,11 @@
 	filter: alpha(opacity=0);
 }
 
+.crellyslider > .cs-navigation {
+	opacity: 1;
+	filter: alpha(opacity=100);
+}
+
 .crellyslider:hover > .cs-controls,
 .crellyslider:hover > .cs-navigation {
 	opacity: 1;
@@ -195,6 +200,7 @@
 	height: 100% !important;
 	top: 0 !important;
 	left: 0 !important;
+	z-index: 10;
 }
 
 .crellyslider > .cs-slides > .cs-slide > * {
