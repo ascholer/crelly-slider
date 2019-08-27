@@ -185,7 +185,9 @@ var crellyslider_vimeo_api_ready = false;
 			if(settings.responsive) {
 				setScale();
 			}
-			setLayout();
+			//Prevent two stage snap-in - final size can't be determined yet
+			//setLayout();
+
 
 			// Set slides links
 			getSlides().find('.cs-background-link')
