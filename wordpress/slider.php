@@ -188,6 +188,25 @@
 				</td>
 			</tr>
 			<tr>
+				<td class="cs-name"><?php _e('Single Slide Nav Disable', 'crelly-slider'); ?></td>
+				<td class="cs-content">
+					<select id="cs-slider-singleSlideNavDisable">
+						<?php
+						foreach($slider_select_options['boolean'] as $key => $value) {
+							echo '<option value="' . $key . '"';
+							if((!$edit && $value[1]) || ($edit && $slider->singleSlideNavDisable == $key)) {
+								echo ' selected';
+							}
+							echo '>' . $value[0] . '</option>';
+						}
+						?>
+					</select>
+				</td>
+				<td class="cs-description">
+					<?php _e('Disable navigation if there is only one slide', 'crelly-slider'); ?>
+				</td>
+			</tr>
+			<tr>
 				<td class="cs-name"><?php _e('Enable swipe and drag', 'crelly-slider'); ?></td>
 				<td class="cs-content">
 					<select id="cs-slider-enableSwipe">

@@ -1319,6 +1319,8 @@
 				'automaticSlide' : true,
 				'showControls' : false,
 				'showNavigation' : false,
+				'singleSlideNavDisable' : false,
+
 				'enableSwipe' : false,
 				'showProgressBar' : false,
 				'pauseOnHover' : false,
@@ -1407,6 +1409,7 @@
 				automaticSlide : parseInt(content.find('#cs-slider-automaticSlide').val()),
 				showControls : parseInt(content.find('#cs-slider-showControls').val()),
 				showNavigation : parseInt(content.find('#cs-slider-showNavigation').val()),
+				singleSlideNavDisable : parseInt(content.find('#cs-slider-singleSlideNavDisable').val()),
 				enableSwipe : parseInt(content.find('#cs-slider-enableSwipe').val()),
 				showProgressBar : parseInt(content.find('#cs-slider-showProgressBar').val()),
 				pauseOnHover : parseInt(content.find('#cs-slider-pauseOnHover').val()),

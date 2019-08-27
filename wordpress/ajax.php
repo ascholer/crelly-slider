@@ -103,6 +103,7 @@ function crellyslider_insertSliderSQL($options) {
 			'automaticSlide' => $options['automaticSlide'],
 			'showControls' => $options['showControls'],
 			'showNavigation' => $options['showNavigation'],
+			'singleSlideNavDisable' => $options['singleSlideNavDisable'],
 			'showProgressBar' => $options['showProgressBar'],
 			'pauseOnHover' => $options['pauseOnHover'],
 			'callbacks' => $options['callbacks'],
@@ -116,6 +117,7 @@ function crellyslider_insertSliderSQL($options) {
 			'%s',
 			'%s',
 			'%s',
+			'%d',
 			'%d',
 			'%d',
 			'%d',
@@ -143,6 +145,7 @@ function crellyslider_editSlider_callback() {
 
 	global $wpdb;
 	$options = $_POST['datas'];
+
 	$table_name = $wpdb->prefix . 'crellyslider_sliders';
 
 	if(!CrellySliderCommon::sliderExists((esc_sql($options['id'])))) {
@@ -166,6 +169,7 @@ function crellyslider_editSlider_callback() {
 			'automaticSlide' => $options['automaticSlide'],
 			'showControls' => $options['showControls'],
 			'showNavigation' => $options['showNavigation'],
+			'singleSlideNavDisable' => $options['singleSlideNavDisable'],
 			'showProgressBar' => $options['showProgressBar'],
 			'pauseOnHover' => $options['pauseOnHover'],
 			'callbacks' => $options['callbacks'],
@@ -180,6 +184,7 @@ function crellyslider_editSlider_callback() {
 			'%s',
 			'%s',
 			'%s',
+			'%d',
 			'%d',
 			'%d',
 			'%d',

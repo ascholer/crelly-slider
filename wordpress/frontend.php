@@ -240,6 +240,7 @@ class CrellySliderFrontend {
 		$output .= 'automaticSlide: ' . $slider->automaticSlide . ',' . "\n";
 		$output .= 'showControls: ' . $slider->showControls . ',' . "\n";
 		$output .= 'showNavigation: ' . $slider->showNavigation . ',' . "\n";
+		$output .= 'singleSlideNavDisable: ' . $slider->singleSlideNavDisable . ',' . "\n";
 		$output .= 'enableSwipe: ' . $slider->enableSwipe . ',' . "\n";
 		$output .= 'showProgressBar: ' . $slider->showProgressBar . ',' . "\n";
 		$output .= 'pauseOnHover: ' . $slider->pauseOnHover . ',' . "\n";

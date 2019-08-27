@@ -49,6 +49,7 @@ class CrellySliderTables {
 		automaticSlide INT,
 		showControls INT,
 		showNavigation INT,
+		singleSlideNavDisable INT DEFAULT 0,
 		enableSwipe INT DEFAULT 1,
 		showProgressBar INT,
 		pauseOnHover INT,

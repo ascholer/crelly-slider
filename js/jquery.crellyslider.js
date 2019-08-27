@@ -138,12 +138,19 @@ var crellyslider_vimeo_api_ready = false;
 				return false;
 			}
 
-			// If there is only a slide, clone it
 			if(total_slides == 1) {
-				var clone = getSlide(0);
-				var prepend = SLIDER.find(CRELLY).find(SLIDES);
-				clone.clone().prependTo(prepend);
-				total_slides++;
+				// If there is only a slide, disable navigation or clone it
+				if(settings.singleSlideNavDisable){
+					settings.automaticSlide = false;
+					settings.showControls = false;
+					settings.showNavigation = false;
+					settings.showProgressBar = false;
+				} else {
+					var clone = getSlide(0);
+					var prepend = SLIDER.find(CRELLY).find(SLIDES);
+					clone.clone().prependTo(prepend);
+					total_slides++;
+				}
 			}
 
 			orderSlides();
@@ -2233,6 +2240,7 @@ var crellyslider_vimeo_api_ready = false;
 				startFromSlide					: 0, // -1 means random, >= 0 means the exact index
 				showControls 						: true,
 				showNavigation					: true,
+				singleSlideNavDisable			: false,
 				showProgressBar					: true,
 				enableSwipe							: true,
 
