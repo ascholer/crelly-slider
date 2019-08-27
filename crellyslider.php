@@ -15,7 +15,7 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 /** GLOBALS **/
 /*************/
 
-define('CS_DEBUG', true);
+define('CS_DEBUG', false);
 
 define('CS_VERSION', '1.3.5');
 define('CS_MIN_CAPABILITY', 'manage_options');
