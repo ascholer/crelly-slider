@@ -278,24 +278,6 @@ function crellyslider_insertSlidesSQL($options) {
 	return crellyslider_wp_insert_rows($options, $wpdb->prefix . 'crellyslider_slides');
 }
 
-function crellyslider_insertSlidesSQL($options) {
-	global $wpdb;
-
-	// Sanitize input
-	for($i = 0; $i < count($options); $i++) {
-		$options[$i]->background_type_image = sanitize_text_field($options[$i]->background_type_image);
-		$options[$i]->background_type_color = sanitize_text_field($options[$i]->background_type_color);
-		$options[$i]->background_repeat = sanitize_text_field($options[$i]->background_repeat);
-		$options[$i]->background_propriety_size = sanitize_text_field($options[$i]->background_propriety_size);
-		$options[$i]->data_in = sanitize_text_field($options[$i]->data_in);
-		$options[$i]->data_out = sanitize_text_field($options[$i]->data_out);
-		$options[$i]->link = sanitize_text_field($options[$i]->link);
-		$options[$i]->custom_css = sanitize_textarea_field($options[$i]->custom_css);
-	}
-
-	return crellyslider_wp_insert_rows($options, $wpdb->prefix . 'crellyslider_slides');
-}
-
 // Edit elements. Receives an array with all the elements options. Delete al the old elements then recreate them
 add_action('wp_ajax_crellyslider_editElements', 'crellyslider_editElements_callback');
 function crellyslider_editElements_callback() {
