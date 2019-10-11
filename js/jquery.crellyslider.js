@@ -341,19 +341,6 @@ var crellyslider_vimeo_api_ready = false;
 										youtube_videos[element.attr('id')].manually_paused = false;
 									}
 								}
-
-								if(e.data === YT.PlayerState.PLAYING) {
-									if(getItemData(element, 'pause-while-watching')) {
-										prevent_hover_interactions = true;
-										pause();
-									}
-								}
-								else if(e.data === YT.PlayerState.PAUSED || e.data === YT.PlayerState.ENDED) {
-									if(!watchingAndWait()) {
-										prevent_hover_interactions = false;
-										resume();
-									}
-								}
 							},
 						},
 					});
