@@ -186,7 +186,7 @@ var crellyslider_vimeo_api_ready = false;
 				setScale();
 			}
 			//Prevent two stage snap-in - final size can't be determined yet
-			setLayout();
+			//setLayout();
 
 
 			// Set slides links
